@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+            <img src="img/index-logo.svg" width="368" height="153"
+             alt="Логотип бабершопа Бородинский">
+        </a>
+        <ul class="main-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li class="main-navigation-current"><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul>
+            <li class="login-link"><a href="#">Вход</a></li>
+        </ul>
+      </nav>  
+    </header> 
+    
+    <main>
+       
+        <h1 class="page-title">Средства для ухода</h1>
+        
+        <ol class="breadcrumbs">
+            <!-- нужны ли тут ссылки? Мне кажется, что нужны, ибо это дополнительная возможность быстро по сайту перемещаться не обащаясь к гланвому меню.-->
+            <li><a href="index.html">Главная</a></li> 
+            <li><a href="catalog.html">Магазин</a></li>
+            <li class="breadcrumbs-current">Средства для ухода</li>
+         </ol>
+        
+<!-- Начало первой секции -->
+        <section class="parameters">
+           <!-- Начало первой подсекции -->
+          <h2 class="visually-hidden">Меню выбора параметров</h2>
+            <div class="producer">
+                <fieldset>
+                   <legend>Производители:</legend>
+                    <form class="filter" action="#" method="post">
+                       <ul>
+                            <li class="filter-item">
+                                <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Baxter-of-california" checked>Baxter of california</label>
+                            </li>
+                            <li class="filter-item">
+                                <label><input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" name="My-natty">My natty</label>
+                            </li>
+                            <li class="filter-item">
+                                <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Suavecito" checked>Suavecito</label>
+                            </li>
+                            <li class="filter-item">
+                                <label><input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" name="Malin-plus-Goetz">Malin+Goetz</label>
+                            </li>
+                            <li class="filter-item">
+                                <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Murrays">Murray's</label>
+                            </li>
+                            <li class="filter-item">
+                                <label><input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" name="American-crew" checked>American crew</label>
+                            </li>
+                        </ul>
+                    </form>
+                </fieldset>
+            </div>
+            <!-- Конец первой подсекции -->
+
+<!-- Начало второй подсекции -->
+            <div class="prouct-grops">
+                <fieldset>
+                    <legend>Группы товаров:</legend>
+                    <form class="product-group-form">
+                        <ul>
+                            <li class="filter-option">
+                                <label><input type="radio" name="certain-group" checked>Бритвенные приндалежности</label>
+                            </li>
+                            <li  class="filter-option">
+                                <label><input type="radio" name="certain-group">Средства для ухода</label>
+                            </li>
+                            <li  class="filter-option">
+                                <label><input type="radio" name="certain-group">Аксессуары</label>
+                            </li>
+                        </ul> 
+                    </form>
+                </fieldset>
+            </div>
+ <!-- Конец второй подсекции -->
+             
+             <!-- Кнопочка, которая показывает результаты выбора по двум подсекциям первой секции -->
+             <button class="button button-snow" type="submit">Показать</button>
+        </section>
+<!-- Конец первой секции -->
+        
+<!-- Начало второй секции -->
+        <section class="catalog">
+            <h2 class="visually-hidden">Товары</h2>
+            <!-- нужен ли тут ещё контейнер, отделяющий h2 от непосредственного содержимого этой секции? -->
+            <hr>
+            <article class="catalog-item">
+                    <img src="img/merch1.jpg" width="150" height="150" alt="Набор для путешествий «Baxter of california»">
+                    <h3>Набор для путешествий «Baxter of california»</h3>
+                    <b>2 900 РУБ.</b>
+                    <a class="button button-buy">Купить</a>
+            </article>
+            
+            <!-- Первый оформил как учили к куксби, а остальные как вижу это сам -->
+            <hr>
+            <article><figure>
+                    <img src="img/merch2.jpg" width="150" height="150" alt="Увлажняющий кондиционер «Baxter of california»">
+                    <figcaption>Увлажняющий кондиционер «Baxter of california»</figcaption>
+                </figure>
+                <b>750 РУБ.</b>
+                <a class="button button-buy">Купить</a>
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <img src="img/merch3.jpg" width="150" height="150" alt="Гель для волос «Sauvecito»">
+                    <figcaption>Гель для волос «Sauvecito»</figcaption>
+                </figure>
+                <b>290 РУБ.</b>
+                <a class="button button-buy">Купить</a>
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <img src="img/merch4.jpg" width="150" height="150" alt="Глина для укладки волос «American crew»">
+                    <figcaption>Глина для укладки волос «American crew»</figcaption>
+                </figure>
+                <b>500 РУБ.</b>
+                <a class="button button-buy">Купить</a>
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <img src="img/merch5.jpg" width="150" height="150" alt="Гель для волос «American crew»">
+                    <figcaption>Гель для волос «American crew»</figcaption>
+                </figure>
+                <b>300 РУБ.</b>
+                <a class="button button-buy">Купить</a>
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <img src="img/merch6.jpg" width="150" height="150" alt="Набор для бритья «Baxter of california»">
+                    <figcaption>Набор для бритья «Baxter of california»</figcaption>
+                </figure>
+                <b>3 900 РУБ.</b>
+                <a class="button button-buy">Купить</a>
+            </article>
+            <hr>
+<!-- Начало кнопок переключения страниц товаров -->            
+            <ol class="pages">
+                <li class="page-button"><a href="#">1</a></li>
+                <li class="page-button pagination-item-current"><a>2</a></li>
+                <li class="page-button"><a href="#">3</a></li>
+                <li class="page-button"><a href="#">4</a></li>
+            </ol>
+<!-- Конец кнопок переключения страниц товаров -->  
+        </section>
+<!-- Конец второй секции -->
+    </main>
+    
+    <footer class="main-footer">
+        <p class="footer-contacts">
+            Бабершоп Бородинский<br>
+            Адрес: г. Санкт-Перербург, Б.Конюшенная, д. 19/8<br>
+            <a href="map.html">Как нас найти?</a>   
+            Телефон: +7 (812) 666-02-66
+        </p>
+        <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <ul>
+                <li>
+                    <a class="social-button" href="#">Вконтакте</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">Фейсбук</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">Инстаграм</a>
+                </li>
+            </ul>
+        </div>
+        <p>
+            <b>Разработано:</b>
+            <a class="button" href="https://htmlacademy.ru">HTML Acdemy</a>
+        </p>
+    </footer>  
+    
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+                <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-password-info">
+                <input type="checkbox" name="remember" class="visually-hidden">
+                Запомните меня
+                <a class="restore" hrep="#">Я забыл пароль!</a>
+            </p>
+        </form>
+        <span class="modal-close">x</span>
+    </section>
+    
+</body>
+</html>
